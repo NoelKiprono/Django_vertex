@@ -1,0 +1,22 @@
+{% extends 'master.html' %}
+{% block title %} Products {% endblock title %}
+{% block content %}
+
+
+<div class="container">
+    <h3>{{name}}</h3>
+    <p>{{age}}</p>
+    <p>{{weight}}</p>
+
+    {% for sub in subjects%}
+    <p>{{sub}}</p>
+    {% endfor %}
+
+    {% if isDisabled %}
+    <p>Has disability</p>
+    {% endif %}
+
+
+</div>
+
+{% endblock content %}
