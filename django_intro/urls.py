@@ -22,6 +22,7 @@ from vertex import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('about/', views.about, name='about'),
-    path('products/', views.products, name= 'products'),
+    path('about', views.about, name='about'),
+    path('products', views.products, name= 'products'),
+    path('students', views.students, name='students'),
 ]
